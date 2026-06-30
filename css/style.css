@@ -1,0 +1,103 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* normalize */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* margin and padding */
+
+.mt-10{
+	margin-top: 10px;
+}
+.mt-20{
+	margin-top: 20px;
+}
+
+/* main styles */
+
+html{
+	font-family: "Roboto", sans-serif;
+}
+
+body{
+	margin: 0 auto;
+	width: 1024px;
+	padding: 20px;
+	font-size: 18px;
+	overflow-x: hidden;
+}
+
+.list--style{
+	list-style: none;
+}
+
+/* contacts__list */
+
+.contacts__list{
+	display: flex;
+}
+
+.contacts__list-item:not(:last-child)::after{
+	content: "|";
+	padding: 0 5px;
+}
+
+/* hobbies */
+
+.hobbies__list{
+	padding-left: 17px;
+}
+
+/* skills */
+.skills__table{
+	text-align-last: left;
+}
+
+/* contacts form */
+.form{
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form__group{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form__group-textarea{
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.form__input{
+	width: 80%;
+}
+
+.form__textarea{
+	width: 100%;
+}
+
+.form__input, .form__textarea{
+	padding: 5px;
+	border: 1px solid #727272;
+	border-radius: 5px;
+}
+
+.form__btn{
+	width: 100px;
+	height: 30px;
+	background-color: #727272;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
